@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+	<body>
+		<form action="">
+			<!-- minlength maxlength min max -->
+			<!-- A001 B001 C001-->
+			<label for="search">Search</label>
+			<input  type="text" maxlength="10" minlength="4"  placeholder="Search" name="q"  >
+			<input id="search" type="text" maxlength="4" minlength="4"  placeholder="Search" name="roll"  pattern="^[ABC]\d{3}$">
+			<br />
+			Gender<br />
+			<input type="radio" id="genderM" name="gender" value="M" required> <label for="genderM">Male</label><br />
+			<input type="radio" id="genderF" name="gender" value="F" required><label for="genderF">FeMale</label> <br />
+			
+			<br /><br />
+			<select name="t" required>
+				<option value="">Select Any option</option>
+				<option value="a">A</option>
+				<option>B</option>
+				<option>C</option>
+				<option>D</option>
+			</select>
+			
+			<br />
+			Educational Qualification<br />
+			<input type="checkbox" name="qualification" value="G"> Graduate<br />
+			<input type="checkbox" name="qualification" value="M"> Matriculate<br />
+			<input type="checkbox" name="qualification" value="I"> Intermediate<br />
+			<input type="checkbox" name="qualification" value="PG"> Post Graduate<br />
+			<input type="number" max="200" min="100" />
+			<input type="button" value="Button">
+			
+			<input type="Submit" value="Submit">
+			<input type="reset" value="Reset">
+		</form>
+		
+	</body>
+</html>
